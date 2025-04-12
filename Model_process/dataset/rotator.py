@@ -6,8 +6,8 @@ import random
 from tqdm import tqdm
 
 # Paths
-INPUT_FOLDER = "transformed_sinthetic"
-OUTPUT_FOLDER = "rotated_synthetic"
+INPUT_FOLDER = "transformed_stock_images"
+OUTPUT_FOLDER = "base_dataset"
 os.makedirs(OUTPUT_FOLDER, exist_ok=True)
 
 # Output metadata
@@ -74,6 +74,6 @@ for idx, inner_filename in tqdm(enumerate(inner_files), total=len(inner_files)):
 
 # Save to CSV
 df_output = pd.DataFrame(output_data)
-df_output.to_csv("rotated_dataset_metadata.csv", index=False)
+df_output.to_csv("base_dataset.csv", index=False)
 
 print("✅ Dataset creation complete! CSV and images saved.")

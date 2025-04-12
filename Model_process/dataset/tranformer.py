@@ -95,7 +95,7 @@ def process_dataset(input_folder, output_folder, csv_filename, start_id=201, end
                 break
 
 if __name__ == "__main__":
-    input_folder = "downloaded_sinthetic"  # Folder with 200 squared images
-    output_folder = "transformed_sinthetic"  # Folder to save transformed images
-    csv_filename = "sinthetic_images.csv"
+    input_folder = "stock_images"  # Folder with 200 squared images
+    output_folder = "transformed_stock_images"  # Folder to save transformed images
+    csv_filename = "stock_images.csv"
     process_dataset(input_folder, output_folder, csv_filename, start_id=201, end_id=400)
